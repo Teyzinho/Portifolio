@@ -1,0 +1,412 @@
+.teste{
+    height: 2000px;
+}
+
+.video{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    min-height:48vw;
+    max-height: 50vw;
+}
+
+.video video{
+    position: absolute;
+    width: 100%;
+    min-height:48vw;
+    max-height: 50vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.texto img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.apresentacao{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+}
+
+.backgroundCarrocel{
+    width: 100%;
+    height: 43vw;
+    min-height: 500px;
+    display: flex;
+    object-fit: cover;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.backgroundCarrocelImg{
+    position: absolute;
+    width: 100%;
+    height: 43vw;
+    min-height: 500px;
+    z-index: -1;
+    filter: blur(2px) brightness(0.5);
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+
+.containerImg{
+    object-fit: cover;
+    width: 19vw;
+    height: 27vw;
+    min-width: 200px;
+    min-height: 320px;
+    position: absolute;
+}
+
+.carrocel{
+    width:100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.carrocelContainer{
+    position: absolute;
+    height: 475px;
+    transition-duration: 0.7s;
+}
+
+.carrocelText{
+    position: absolute;
+    z-index: 4;
+    color:white;
+    left:35%;
+    margin-top: 15%;
+}
+
+.carrocelText .linha{
+    width:25%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    margin:5px;
+}
+
+.carrocelText h1{
+    font-size: 2.5vw;
+    font-family: DejaVu Sans Mono, monospace;
+    font-weight: 800;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.carrocelText p{
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 1.5vw;
+}
+
+/* Radio Carrocel */
+.groupRadioCarrocel{
+    justify-self: center;
+    align-self: flex-end;
+    position: absolute;
+    z-index: 5;
+    margin-bottom: 25px;
+}
+
+.groupRadioCarrocel input + label::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.groupRadioCarrocel input:checked + label::before{
+    width: 30px;
+    background-color: rgb(27, 34, 217);
+}
+
+.radioCarrocel{
+    height: 25px;
+    border-radius: 25px;
+    border-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color:black;
+}
+
+.arrowLeft{
+    padding-left: 50px;
+    height: 99.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.arrowLeft svg{
+    fill: rgb(175, 175, 175);
+    transition: all 0.3s;
+}
+
+.arrowRight{
+    width: 100%;
+    height: 99.5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+
+.arrowRight svg{
+    fill: rgb(175, 175, 175);
+    transition: all 0.3s;
+}
+
+.arrowRight svg:hover{
+    fill: white;
+    cursor: pointer;
+}
+
+.arrowLeft svg:hover{
+    fill: white;
+    cursor: pointer;
+}
+
+.bottonTest{
+    display: flex;
+}
+
+.bottonTest div{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+#carrocel1:checked ~ .buttonTest1{
+    width: 25px;
+}
+
+/* Posição dos card do carrocel */
+.centro{
+    left:40%;
+    transform:translate(-50%);
+    z-index: 3;
+}
+
+.direita1{
+    left:45%;
+    transform:translate(-50%); 
+
+    z-index: 2;
+    filter: blur(2px) brightness(0.5);
+}
+
+.direita2{
+    left:50%;
+    transform:translate(-50%);
+    z-index: 1;
+    filter: blur(2px) brightness(0.5);
+}
+
+.esquerda1{
+    left:35%;
+    transform:translate(-50%); 
+    z-index: 2;
+    filter: blur(2px) brightness(0.5);
+}
+
+.esquerda2{
+    left:30%;
+    transform:translate(-50%); 
+    z-index: 1;
+    filter: blur(2px) brightness(0.5);
+}
+
+.addOpacity{
+    opacity: 1;
+}
+
+.filter{
+    filter: blur(2px) brightness(0.5);
+}
+
+
+/* CARD */
+
+.cardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    overflow: hidden;
+    border-radius: 10px;
+    max-width:360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    margin-bottom: 25px;
+}
+
+.card1{
+    background-image: linear-gradient(#333,#333);
+}
+
+.card2{
+    background-image: linear-gradient(#333,#333);
+}
+
+.card3{
+    background-image: linear-gradient(#333,#333);
+}
+
+.card4{
+    background-image: linear-gradient(#333,#333);
+}
+
+.cardImg{
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+
+/* Imagens dos cards */
+
+.card1Img{
+    background-image: url(Img/netflix-symbol-black.png);
+}
+
+.card2Img{
+    background-image: url(Img/jokenpo.png);
+}
+
+.card3Img{
+    background-image: url(Img/Pokedex.png);
+}
+
+.card4Img{
+    background-image: url(Img/quiz.webp);
+}
+
+.cardImg span{
+    font-size: 24px;
+    font-style: italic;
+    color: white;
+}
+
+.cardContent{
+    padding: 0 20px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    height: 0;
+
+    transition: all 0.5s;
+
+    opacity: 0;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.cardContent p{
+    color:white;
+}
+
+.arrow{
+    color:white;
+    padding: 0;
+    padding-bottom: 10px;
+    transform: rotate(180deg);
+
+    transition: all 0.5s;
+}
+
+.desc{
+ text-align: start;
+}
+
+/* CARD HOVER */
+.card:hover .cardContent{
+    height:150px;
+    opacity: 1;
+}
+
+.card:hover .cardImg{
+    opacity: 1;
+    width: 400px;
+}
+
+.card1:hover{
+    background-image: linear-gradient(rgb(159, 13, 13),rgb(171, 29, 29));
+}
+
+.card2:hover{
+    background-image: linear-gradient(rgb(248, 109, 167),rgb(243, 104, 104));
+}
+
+.card3:hover{
+    background-image: linear-gradient(rgb(131, 160, 255),rgb(84, 195, 230));
+}
+
+.card4:hover{
+    background-image: linear-gradient(rgb(75, 116, 253),rgb(41, 113, 248));
+}
+
+.card:hover .arrow{
+    transform: rotate(0deg);
+}
+
+/*Animação*/
+[data-animateText]{
+    opacity: 0;
+    transition: 0.7s;
+}
+
+[data-animateText="bottom"]{
+    transform:translate3d(0px , 200px, 0px);
+}
+
+[data-animateText].animate{
+    opacity: 1;
+    transform: translate3d(0px,0px,0px);
+}
+
+[data-animateText].remove{
+    transition: 0.3s;
+    opacity: 0;
+    transform: translate3d(0px,00px,0px);
+}
