@@ -2,8 +2,30 @@
     height: 2000px;
 }
 
-.video{
+.titulo2{
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 50px;
 
+    width: fit-content;
+    font-weight: 500;
+    font-size: 1.75rem;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 75%;
+    height: 0.3rem;
+    border-radius: 2rem;
+    margin-top: 0.8rem;
+    background-image: linear-gradient(90deg, #1E6FD9 0%, #1c0ee4 92.32%);
+}
+
+.video{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,8 +57,14 @@
     border-radius: 100px;
 }
 
+/* Sobre Mim */
+
+.sobreContent{
+    display: flex;
+}
+
 .apresentacao{
-    margin-top: 25px;
+    margin-top: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +72,28 @@
     width: 100%;
     height: 250px;
 }
+
+.apresentacao h1{
+    padding-bottom: 25px;
+}
+
+.apresentacao h3{
+    width: 50%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/* Habilidades Mim */
+
+.habilidades{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 100px;
+}
+
+/* Carrocel */
 
 .backgroundCarrocel{
     width: 100%;
@@ -64,6 +114,8 @@
     filter: blur(2px) brightness(0.5);
     transition-duration: 0.5s;
     opacity: 0;
+
+    object-fit: cover;
 }
 
 .containerImg{
@@ -73,6 +125,9 @@
     min-width: 200px;
     min-height: 320px;
     position: absolute;
+
+    border-radius: 5px;
+    filter: brightness(0.8);
 }
 
 .carrocel{
@@ -93,7 +148,7 @@
     position: absolute;
     z-index: 4;
     color:white;
-    left:35%;
+    left:30%;
     margin-top: 15%;
 }
 
@@ -111,11 +166,18 @@
     font-weight: 800;
     margin-bottom: 0;
     padding: 0;
+    color: #FFF;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #000;
 }
 
 .carrocelText p{
     font-family: DejaVu Sans Mono, monospace;
     font-size: 1.5vw;
+    color: #FFF;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #000;
+    width: 55%;
 }
 
 /* Radio Carrocel */
@@ -139,7 +201,7 @@
 
 .groupRadioCarrocel input:checked + label::before{
     width: 30px;
-    background-color: rgb(27, 34, 217);
+    background-color: #1E6FD9;
 }
 
 .radioCarrocel{
@@ -272,6 +334,11 @@
     box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
     margin-bottom: 25px;
 }
+
+.card-box{
+    /* min-height: 450px; */
+}
+
 
 .card1{
     background-image: linear-gradient(#333,#333);
@@ -409,4 +476,9 @@
     transition: 0.3s;
     opacity: 0;
     transform: translate3d(0px,00px,0px);
+}
+
+/* ********* */
+.projetosWeb{
+    min-height: 750px;
 }
