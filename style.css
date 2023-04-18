@@ -23,6 +23,8 @@
     border-radius: 2rem;
     margin-top: 0.8rem;
     background-image: linear-gradient(90deg, #1E6FD9 0%, #1c0ee4 92.32%);
+    background-image: radial-gradient(circle at -20.71% 50%, #5a8eff 0, #3c78f2 50%, #1862ce 100%);
+    background: linear-gradient(90deg, rgba(10,56,194,1) 0%, rgba(0,140,255,1) 100%);
 }
 
 .video{
@@ -314,148 +316,6 @@
 }
 
 
-/* CARD */
-
-.cardContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card{
-    overflow: hidden;
-    border-radius: 10px;
-    max-width:360px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
-    margin-bottom: 25px;
-}
-
-.card-box{
-    /* min-height: 450px; */
-}
-
-
-.card1{
-    background-image: linear-gradient(#333,#333);
-}
-
-.card2{
-    background-image: linear-gradient(#333,#333);
-}
-
-.card3{
-    background-image: linear-gradient(#333,#333);
-}
-
-.card4{
-    background-image: linear-gradient(#333,#333);
-}
-
-.cardImg{
-    background-position: center;
-    background-size: cover;
-    width: 360px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.7;
-    transition: all 0.5s;
-}
-
-/* Imagens dos cards */
-
-.card1Img{
-    background-image: url(Img/netflix-symbol-black.png);
-}
-
-.card2Img{
-    background-image: url(Img/jokenpo.png);
-}
-
-.card3Img{
-    background-image: url(Img/Pokedex.png);
-}
-
-.card4Img{
-    background-image: url(Img/quiz.webp);
-}
-
-.cardImg span{
-    font-size: 24px;
-    font-style: italic;
-    color: white;
-}
-
-.cardContent{
-    padding: 0 20px;
-    padding-bottom: 0px;
-    overflow: hidden;
-    height: 0;
-
-    transition: all 0.5s;
-
-    opacity: 0;
-}
-
-.title{
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-}
-
-.cardContent p{
-    color:white;
-}
-
-.arrow{
-    color:white;
-    padding: 0;
-    padding-bottom: 10px;
-    transform: rotate(180deg);
-
-    transition: all 0.5s;
-}
-
-.desc{
- text-align: start;
-}
-
-/* CARD HOVER */
-.card:hover .cardContent{
-    height:150px;
-    opacity: 1;
-}
-
-.card:hover .cardImg{
-    opacity: 1;
-    width: 400px;
-}
-
-.card1:hover{
-    background-image: linear-gradient(rgb(159, 13, 13),rgb(171, 29, 29));
-}
-
-.card2:hover{
-    background-image: linear-gradient(rgb(248, 109, 167),rgb(243, 104, 104));
-}
-
-.card3:hover{
-    background-image: linear-gradient(rgb(131, 160, 255),rgb(84, 195, 230));
-}
-
-.card4:hover{
-    background-image: linear-gradient(rgb(75, 116, 253),rgb(41, 113, 248));
-}
-
-.card:hover .arrow{
-    transform: rotate(0deg);
-}
 
 /*Animação*/
 [data-animateText]{
@@ -482,3 +342,151 @@
 .projetosWeb{
     min-height: 750px;
 }
+
+/* *********Cards************ */
+
+
+ .cards{
+    position: relative;
+    width: 357px;
+    height: 500px;
+
+    /* width: 300px;
+    height: 450px; */
+
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    cursor: pointer;
+}
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1600px;
+    }
+  }
+
+.cards img{
+    object-fit: cover;
+    width: calc(357px - 6px);
+    height: calc(500px - 6px);
+
+    filter: brightness(0.8);
+    position: absolute;
+
+    transition: all 0.3s;
+}
+
+ .card-texto{
+    position: relative;
+    z-index: 2;
+    color: white;
+    transition: all 0.3s;
+    padding-left: 10px;
+}
+
+.card-texto h3{
+    padding: 0;
+    margin: 0;
+}
+
+.card-texto p{
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.hidden{
+    position: relative;
+    width: 100%;
+    height: 0;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.cards:hover .card-texto .hidden{
+    height: 100px;
+    opacity: 1;
+}
+
+.cards:hover img{
+    transform: scale(1.08);
+}
+
+/* *********** borders Colors ********* */
+.border-orange{
+    border: 3px solid orangered;
+}
+
+/* ******** Modal *********/
+.modal{
+    --bs-modal-bg: #e6e6e6;
+}
+
+.modal-body{
+    display: flex;
+    padding-top: 25px;
+    /* color: white; */
+}
+
+.left-modal-body{
+    display: flex;
+    width: 45%;
+
+}
+
+.left-modal-body img{
+    width: 90%;
+    margin-left: 20px;
+}
+
+.right-modal-body{
+    width: 55%;
+}
+
+.modal-footer{
+    justify-content: flex-start;
+}
+
+.modal-footer .btn-color{
+    background: linear-gradient(90deg, #1E6FD9 0%, #2517f1 92.32%);
+    background-image: radial-gradient(circle at -20.71% 50%, #5a8eff 0, #3c78f2 50%, #1862ce 100%);
+    color: white;
+}
+
+.modal-footer .btn-color:hover{
+    color: rgb(207, 207, 207);
+}
+
+@media (min-width: 576px) {
+    .modal {
+      --bs-modal-margin: 1.75rem;
+      --bs-modal-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    .modal-dialog {
+      max-width: var(--bs-modal-width);
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .modal-sm {
+      --bs-modal-width: 300px;
+    }
+  }
+  @media (min-width: 992px) {
+    .modal-lg,
+    .modal-xl {
+      --bs-modal-width: 800px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .modal-xl {
+      --bs-modal-width: 1500px;
+    }
+  }
