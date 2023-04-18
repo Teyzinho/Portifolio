@@ -66,7 +66,7 @@
 
   <!--***************** Sobre ******************-->
   <div class="sobreContent">
-    <div class="apresentacao">
+    <div class="apresentacao" data-anime="left">
       <h1>Olá! Sou Thiago Silva</h1>
       <h3>Estou estudando para me tornar um programador Fullstack! Atualmente, tenho conhecimento em HTML,
         CSS, PHP, SQL, JS, C e Java. Estou estudando Python e JavaScript e, no futuro, pretendo aprender sobre C#</h3>
@@ -74,7 +74,7 @@
   </div>
 
   <!--********** Habilidades ********* -->
-
+<div data-anime="left">
   <h1 class="text-center" style="padding-top: 75px; padding-bottom: 50px;">Habilidades</h1>
 
   <div class="habilidades">
@@ -93,12 +93,12 @@
     <img align="center" alt="" height="60" width="70"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
   </div>
-
-
-  <h1 class="text-center" style="padding-top: 25px;">Projetos</h1>
+</div>
 
   <!-- ********************Carrocel ****************************-->
-  <h2 class="titulo2">Em Destaque</h2>
+  <div data-anime="left">
+  <h1 class="text-center" style="padding-top: 25px;" data-anime="left">Projetos</h1>
+  <h2 class="titulo2" >Em Destaque</h2>
   <div class="backgroundCarrocel">
     <img src="Img/wallpaperOnePiece.jpg" alt="" class="backgroundCarrocelImg" id="backgroundCarrocelImg">
     <img src="Img/twitterBanner.jpg" alt="" class="backgroundCarrocelImg" id="backgroundCarrocelImg2">
@@ -167,12 +167,11 @@
       <label for="carrocel3"></label>
     </div>
   </div>
-
+</div>
   <!-- *********** Aqui vai os projetos web *************** -->
-
-  <h1 class="titulo2">Projetos Web</h1>
-
-  <div class="container xxl">
+<div>
+  <h1 class="titulo2" >Projetos Web</h1>
+  <div class="container xxl" >
     <div class="row">
       <!-- MetaStorm -->
       <div class="col">
@@ -260,9 +259,107 @@
       </div>
     </div>
   </div>
+</div>
 
+  <h1 class="titulo2">Projetos Python</h1>
+  <div class="container xxl" >
+    <div class="row">
+      <!-- Snake Game -->
+      <div class="col">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+          <img src="Img/snake.png" alt="">
+          <div class="card-texto">
+            <h3>Snake Game</h3>
+            <div class="hidden">
+              <p>Um "Jogo da Cobrinha" feito feito em python utilizando a biblioteca pygame </p>
+              <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" >
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jogo da velha -->
+      <div class="col">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+          <img src="Img/jogodavelha.webp" alt="">
+          <div class="card-texto">
+            <h3>Jogo da Velha</h3>
+            <div class="hidden">
+              <p>Um "jogo da Velha" feito feito em python utilizando a biblioteca pygame. </p>
+              <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" >
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gerenciador de senhas -->
+      <div class="col">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+          <img src="Img/cadeado.jpg" alt="">
+          <div class="card-texto">
+            <h3>Gerenciador de Senhas</h3>
+            <div class="hidden">
+              <p>Um aplicatico de gerenciador de senhas. </p>
+              <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" >
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Discord Bot -->
+      <div class="col">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+          <img src="Img/discord.png" alt="">
+          <div class="card-texto">
+            <h3>Discord Bot</h3>
+            <div class="hidden">
+              <p>Um bot do aplicatico discord feito em phyton. </p>
+              <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" >
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- **************** C# ***************** -->
+  <h1 class="titulo2">Projetos C#</h1>
+  <div class="container xxl" >
+    <div class="row">
+      <!-- Rpg simples Game -->
+      <div class="col">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+          <img src="Img/RPG.png" alt="">
+          <div class="card-texto">
+            <h3>Rpg simples</h3>
+            <div class="hidden">
+              <p>Um Jogo de rpg feito com c#. </p>
+              <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" >
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
   
-
   <!-- ********************** Modais ******************** -->
 
     <!-- Modal MetaStorm-->
@@ -276,7 +373,7 @@
             <div class="right-modal-body">
               <h2>MetaStorm</h2>
               <p>MetaStorm é um site de gerenciamento de torneios de e-sports, foi desenvolvido como projeto de conclusão de curso do senai.</p>
-              <p>Foi utilizado as seguintes linguagens</p>
+              <p>Foi criado utilizado as seguintes linguagens</p>
               <ul>
                 <li>Html</li>
                 <li>Css</li>
