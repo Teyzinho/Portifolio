@@ -442,6 +442,11 @@
     /* color: white; */
 }
 
+.modal-body-title{
+    display: flex;
+    justify-content: space-between;
+}
+
 .left-modal-body{
     display: flex;
     width: 45%;
@@ -459,6 +464,7 @@
 
 .modal-footer{
     justify-content: flex-start;
+    padding-left: 30px;
 }
 
 .modal-footer .btn-color{

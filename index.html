@@ -113,6 +113,8 @@
         <h1>ONE PIECE</h1>
         <div class="linha"></div>
         <p>Um pequeno jogo sobre One Piece feito em javaScript, Css e Html.</p>
+        <a href="https://github.com/Teyzinho/OnePiece" class="btn btn-primary">Ver Mais</a>
+        
       </div>
 
       <div class="carrocelContainer carrocelPosition2" id="carrocelContainer2">
@@ -122,6 +124,7 @@
         <h1>Twitter</h1>
         <div class="linha"></div>
         <p>Uma cópia do front-end da <br>rede social twitter feito em Html,Css e JavaScript</p>
+        <a href="https://github.com/Teyzinho/Twitter-Clone" class="btn btn-primary">Ver Mais</a>
       </div>
 
 
@@ -192,7 +195,7 @@
 
       <!-- Mcc -->
       <div class="col">
-        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#mccModal">
           <img src="Img/Mcc.png" alt="">
           <div class="card-texto">
             <h3>Mcc</h3>
@@ -209,7 +212,7 @@
 
       <!-- Pokedex -->
       <div class="col">
-        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#pokedexModal">
           <img src="Img/Pokedex.png" alt="">
           <div class="card-texto">
             <h3>Pokedex</h3>
@@ -226,7 +229,7 @@
 
       <!-- NetflixClone -->
       <div class="col">
-        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#netflixModal">
           <img src="Img/netflix-symbol-black.png" alt="">
           <div class="card-texto">
             <h3>Teyflix</h3>
@@ -243,7 +246,7 @@
 
       <!-- Pedra Papel Tesoura -->
       <div class="col">
-        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#jokenpoModal">
           <img src="Img/jokenpo.png" alt="">
           <div class="card-texto">
             <h3>Pedra Papel Tesoura</h3>
@@ -266,7 +269,7 @@
     <div class="row">
       <!-- Snake Game -->
       <div class="col">
-        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#snakeModal">
           <img src="Img/snake.png" alt="">
           <div class="card-texto">
             <h3>Snake Game</h3>
@@ -283,7 +286,7 @@
 
       <!-- Jogo da velha -->
       <div class="col">
-        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#producaoModal">
           <img src="Img/jogodavelha.webp" alt="">
           <div class="card-texto">
             <h3>Jogo da Velha</h3>
@@ -300,7 +303,7 @@
 
       <!-- Gerenciador de senhas -->
       <div class="col">
-        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#producaoModal">
           <img src="Img/cadeado.jpg" alt="">
           <div class="card-texto">
             <h3>Gerenciador de Senhas</h3>
@@ -317,7 +320,7 @@
 
       <!-- Discord Bot -->
       <div class="col">
-        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#producaoModal">
           <img src="Img/discord.png" alt="">
           <div class="card-texto">
             <h3>Discord Bot</h3>
@@ -342,7 +345,7 @@
     <div class="row">
       <!-- Rpg simples Game -->
       <div class="col">
-        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#metaStormModal">
+        <div class="cards border-orange" data-bs-toggle="modal" data-bs-target="#producaoModal">
           <img src="Img/RPG.png" alt="">
           <div class="card-texto">
             <h3>Rpg simples</h3>
@@ -371,7 +374,11 @@
               <img src="Img/MetaStorm.png" alt="">
             </div>
             <div class="right-modal-body">
-              <h2>MetaStorm</h2>
+              <div class="modal-body-title">
+                <h2>MetaStorm</h2> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
               <p>MetaStorm é um site de gerenciamento de torneios de e-sports, foi desenvolvido como projeto de conclusão de curso do senai.</p>
               <p>Foi criado utilizado as seguintes linguagens</p>
               <ul>
@@ -382,12 +389,209 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a href="#" class="btn btn-sm btn-color">
-              Repositório
-            </a>
-            <!-- <a href="#" class="btn btn-sm btn-dark">
-              Repositório
+            <!-- <a href="#" class="btn btn-sm btn-color">
+              Link
             </a> -->
+            <a href="https://github.com/Teyzinho/MetaStorm" class="btn btn-sm btn-dark">
+              Repositório GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Mcc-->
+    <div class="modal fade modal-xl" id="mccModal" tabindex="-1" aria-labelledby="mccModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="left-modal-body">
+              <img src="Img/Mcc.png" alt="">
+            </div>
+            <div class="right-modal-body">
+              <div class="modal-body-title">
+                <h2>MCC</h2> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+              <p>Mcc é um site de e-commerce ou de materiais de construção, com sistemas de publicar produto, login, registro e carrinho,</p>
+              <p>Foi criado utilizado as seguintes linguagens</p>
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySql</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <a href="#" class="btn btn-sm btn-color">
+              Link
+            </a> -->
+            <a href="https://github.com/Teyzinho/MCC" class="btn btn-sm btn-dark">
+              Repositório GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Pokedex -->
+    <div class="modal fade modal-xl" id="pokedexModal" tabindex="-1" aria-labelledby="pokedexModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="left-modal-body">
+              <img src="Img/Pokedex.png" alt="">
+            </div>
+            <div class="right-modal-body">
+              <div class="modal-body-title">
+                <h2>Pokedex</h2> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+              <p>Um simples site sobre a pokedex utilizando a API do pokemom.</p>
+              <p>Foi criado utilizado as seguintes linguagens</p>
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <a href="#" class="btn btn-sm btn-color">
+              Link
+            </a> -->
+            <a href="https://github.com/Teyzinho/JavaScript/tree/main/Pokedex" class="btn btn-sm btn-dark">
+              Repositório GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal NetFlix -->
+    <div class="modal fade modal-xl" id="netflixModal" tabindex="-1" aria-labelledby="netflixModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="left-modal-body">
+              <img src="Img/netflix.png" alt="">
+            </div>
+            <div class="right-modal-body">
+              <div class="modal-body-title">
+                <h2>NetFlix</h2> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+              <p>Uma cópia paródia do front-end da Netflix.</p>
+              <p>Foi criado utilizado as seguintes linguagens</p>
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <a href="#" class="btn btn-sm btn-color">
+              Link
+            </a> -->
+            <a href="https://github.com/Teyzinho/html-Css/tree/main/Teyflix" class="btn btn-sm btn-dark">
+              Repositório GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal jokenpo -->
+    <div class="modal fade modal-xl" id="jokenpoModal" tabindex="-1" aria-labelledby="jokenpoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="left-modal-body">
+              <img src="Img/jokenpo.png" alt="">
+            </div>
+            <div class="right-modal-body">
+              <div class="modal-body-title">
+                <h2>Jokenpo</h2> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+              <p>Um simples jogo de jokenpo feito para treinar javascript.</p>
+              <p>Foi criado utilizado as seguintes linguagens</p>
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <a href="#" class="btn btn-sm btn-color">
+              Link
+            </a> -->
+            <a href="https://github.com/Teyzinho/JavaScript/tree/main/Pedra%20Papel%20Tesoura" class="btn btn-sm btn-dark">
+              Repositório GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal snake game -->
+    <div class="modal fade modal-xl" id="snakeModal" tabindex="-1" aria-labelledby="snakeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="left-modal-body">
+              <img src="Img/snake.jpg" alt="">
+            </div>
+            <div class="right-modal-body">
+              <div class="modal-body-title">
+                <h2>Snake Game</h2> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+              <p>Primeiro projeto em python, um simples jogo copiando o "joguinho da cobra" para treinar python.</p>
+              <p>Foi criado utilizado as seguintes linguagens</p>
+              <ul>
+                <li>Python</li>
+                <li>Biblioteca PyGame</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <a href="#" class="btn btn-sm btn-color">
+              Link
+            </a> -->
+            <a href="https://github.com/Teyzinho/Python/tree/main/snakeGame" class="btn btn-sm btn-dark">
+              Repositório GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Em Produção -->
+    <div class="modal fade modal-xl" id="producaoModal" tabindex="-1" aria-labelledby="producaoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="left-modal-body">
+              <img src="Img/em-breve-glitch.gif" alt="">
+            </div>
+            <div class="right-modal-body">
+              <div class="modal-body-title">
+                <h2>Projeto Futuro</h2> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"> 
           </div>
         </div>
       </div>
