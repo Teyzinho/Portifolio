@@ -1,6 +1,58 @@
+function exibirLoading() {
+    // Crie um elemento div para o efeito de loading
+    var loadingDiv = document.createElement("div");
+    var loadingImg = document.createElement("img");
+    var loadingCow = document.createElement("img");
+    // Adicione uma classe CSS ao elemento para estilizá-lo
+    loadingDiv.className = "loading";
+    loadingImg.src = "Img/loading.gif";
+    loadingImg.className = "loadingImg";
+    loadingCow.src = "Img/VACA.gif";
+    loadingCow.className = "loadingCow";
+
+    // Adicione o elemento ao corpo do documento
+    document.body.appendChild(loadingDiv);
+    document.body.appendChild(loadingImg);
+    document.body.appendChild(loadingCow);
+  }
+  
+  function removerLoading() {
+    // Encontre o elemento de loading
+    var loadingDiv = document.querySelector(".loading");
+    var loadingImg = document.querySelector(".loadingImg");
+    var loadingCow = document.querySelector(".loadingCow");
+    // Remova o elemento do corpo do documento
+    document.body.removeChild(loadingDiv);
+    document.body.removeChild(loadingImg);
+    document.body.removeChild(loadingCow);
+  }
+
+  // Evento window.onload
+// window.onload = function() {
+//     // Todos os arquivos (imagens, estilos, scripts, etc.) foram carregados
+//     removerLoading();
+//     carrocel();
+//   };
+
+  window.onload = function() {
+    setTimeout(function() {
+      // Simula o carregamento atrasado dos arquivos
+      removerLoading();
+      carrocel();
+    }, 2000);
+  };
+  
+  // Evento DOMContentLoaded
+  document.addEventListener("DOMContentLoaded", function() {
+    // O conteúdo HTML foi carregado, mas imagens e estilos ainda podem estar sendo baixados
+    exibirLoading();
+  });
+
 const target = document.querySelectorAll('[data-text]');
 const animationClass = 'animate';
 const animationRemove = 'remove';
+
+document.getElementById("carrocel1").checked = true;
 
 function carrocelRight() {
     if (document.getElementById("carrocel1").checked) {
@@ -161,3 +213,4 @@ window.addEventListener('scroll', debounce(function(){
     animeScroll();
 }, 100));
 }
+
