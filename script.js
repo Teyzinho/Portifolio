@@ -214,3 +214,32 @@ window.addEventListener('scroll', debounce(function(){
 }, 100));
 }
 
+function scrollDownSobre(){
+    let pixelsToScroll;
+
+  if (window.innerWidth < 768) {
+    pixelsToScroll = 500; 
+  } else {
+    pixelsToScroll = 900; 
+  }
+
+    window.scrollTo({
+        top: pixelsToScroll,
+        behavior: 'smooth' // animação suave ao rolar
+      });
+}
+
+function scrollDownPortifolio(){
+    let pixelsToScroll;
+
+    if (window.innerWidth < 768) {
+      pixelsToScroll = 1200; 
+    } else {
+      pixelsToScroll = 1725; 
+    }
+
+    window.scrollTo({
+        top: pixelsToScroll,
+        behavior: 'smooth' 
+      });
+}
